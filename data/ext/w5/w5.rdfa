@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FHIR schema</title>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      span.h{
+          padding-left: 0px;
+          font-weight: bold;
+      }
+      span{
+          display: block;
+          padding-left: 10px;
+      }</style>
+  </head>
+  <body>
+    <h1>FHIR Schema Extension </h1>
+    <hr />
+    <p vocab="http://schema.org" prefix="w5 http://w5.schema.org/">Default vocabulary prefix: 'w5'</p>
+    <p>
+      <span property="schema:softwareVersion">w5.schema.org Version 0.1</span>
+    </p>
+    <hr />
+    <h2>Classes</h2>
+    <div typeof="rdfs:Class" resource="http://schema.org/w5">
+      <span class="h" property="rdfs:label">w5:w5</span>
+      <span property="rdfs:comment">FHIR W5 categorization is a preliminary classification of the type of fhir property</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Thing">Thing</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/financial">
+      <span class="h" property="rdfs:label">w5:financial</span>
+      <span property="rdfs:comment">Financial Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/when.recorded">
+      <span class="h" property="rdfs:label">w5:when.recorded</span>
+      <span property="rdfs:comment">when this resource itself was created</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/grade">
+      <span class="h" property="rdfs:label">w5:grade</span>
+      <span property="rdfs:comment">A field that indicates the potential impact of the content of the resource</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who.author">
+      <span class="h" property="rdfs:label">w5:who.author</span>
+      <span property="rdfs:comment">who authored the content of the resource</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who.actor">
+      <span class="h" property="rdfs:label">w5:who.actor</span>
+      <span property="rdfs:comment">who did the work described the resource (or will do)</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/when.planned">
+      <span class="h" property="rdfs:label">w5:when.planned</span>
+      <span property="rdfs:comment">when this resource is planned to occur</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who">
+      <span class="h" property="rdfs:label">w5:who</span>
+      <span property="rdfs:comment">An actor involved in the work described by this resource</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/status">
+      <span class="h" property="rdfs:label">w5:status</span>
+      <span property="rdfs:comment">Status Field</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/what">
+      <span class="h" property="rdfs:label">w5:what</span>
+      <span property="rdfs:comment">what this resource is about</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/id">
+      <span class="h" property="rdfs:label">w5:id</span>
+      <span property="rdfs:comment">Business Identifier</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/context">
+      <span class="h" property="rdfs:label">w5:context</span>
+      <span property="rdfs:comment">a resource that gives context for the work described in this resource (usually Encounter or EpisodeOfCare)</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/why">
+      <span class="h" property="rdfs:label">w5:why</span>
+      <span property="rdfs:comment">Why this work was done</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/when.done">
+      <span class="h" property="rdfs:label">w5:when.done</span>
+      <span property="rdfs:comment">when the work described in this resource was completed (or will be)</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/when.init">
+      <span class="h" property="rdfs:label">w5:when.init</span>
+      <span property="rdfs:comment">when the work described in this resource was started (or will be)</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who.source">
+      <span class="h" property="rdfs:label">w5:who.source</span>
+      <span property="rdfs:comment">Who provided the information in this resource</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/workflow">
+      <span class="h" property="rdfs:label">w5:workflow</span>
+      <span property="rdfs:comment">Workflow Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/clinical">
+      <span class="h" property="rdfs:label">w5:clinical</span>
+      <span property="rdfs:comment">Clinical Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who.focus">
+      <span class="h" property="rdfs:label">w5:who.focus</span>
+      <span property="rdfs:comment">Who this resource is about</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/id.version">
+      <span class="h" property="rdfs:label">w5:id.version</span>
+      <span property="rdfs:comment">Identifier for this version</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who.witness">
+      <span class="h" property="rdfs:label">w5:who.witness</span>
+      <span property="rdfs:comment">who attests to the content of the resource (individual or org)</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/class">
+      <span class="h" property="rdfs:label">w5:class</span>
+      <span property="rdfs:comment">Classifier Field</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/administrative">
+      <span class="h" property="rdfs:label">w5:administrative</span>
+      <span property="rdfs:comment">Administrative Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/who.cause">
+      <span class="h" property="rdfs:label">w5:who.cause</span>
+      <span property="rdfs:comment">who prompted the work described in the resource</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/where">
+      <span class="h" property="rdfs:label">w5:where</span>
+      <span property="rdfs:comment">The location of the work described</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/infrastructure">
+      <span class="h" property="rdfs:label">w5:infrastructure</span>
+      <span property="rdfs:comment">Infrastructural Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/conformance">
+      <span class="h" property="rdfs:label">w5:conformance</span>
+      <span property="rdfs:comment">Conformance Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/w5">w5:w5</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/conformance.content">
+      <span class="h" property="rdfs:label">w5:conformance.content</span>
+      <span property="rdfs:comment">Content Conformance Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/conformance">w5:conformance</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/workflow.scheduling">
+      <span class="h" property="rdfs:label">w5:workflow.scheduling</span>
+      <span property="rdfs:comment">Scheduling Workflow Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/workflow">w5:workflow</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/financial.support">
+      <span class="h" property="rdfs:label">w5:financial.support</span>
+      <span property="rdfs:comment">Support Financial Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/financial">w5:financial</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/infrastructure.exchange">
+      <span class="h" property="rdfs:label">w5:infrastructure.exchange</span>
+      <span property="rdfs:comment">Exchange Infrastructural Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/infrastructure">w5:infrastructure</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/clinical.general">
+      <span class="h" property="rdfs:label">w5:clinical.general</span>
+      <span property="rdfs:comment">General Clinical Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/clinical">w5:clinical</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/workflow.order">
+      <span class="h" property="rdfs:label">w5:workflow.order</span>
+      <span property="rdfs:comment">Order Workflow Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/workflow">w5:workflow</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/conformance.misc">
+      <span class="h" property="rdfs:label">w5:conformance.misc</span>
+      <span property="rdfs:comment">Misc Conformance Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/conformance">w5:conformance</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/clinical.medication">
+      <span class="h" property="rdfs:label">w5:clinical.medication</span>
+      <span property="rdfs:comment">Medication Clinical Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/clinical">w5:clinical</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/clinical.careprovision">
+      <span class="h" property="rdfs:label">w5:clinical.careprovision</span>
+      <span property="rdfs:comment">Careprovision Clinical Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/clinical">w5:clinical</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/infrastructure.documents">
+      <span class="h" property="rdfs:label">w5:infrastructure.documents</span>
+      <span property="rdfs:comment">Documents Infrastructural Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/infrastructure">w5:infrastructure</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/clinical.diagnostics">
+      <span class="h" property="rdfs:label">w5:clinical.diagnostics</span>
+      <span property="rdfs:comment">Diagnostics Clinical Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/clinical">w5:clinical</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/workflow.encounter">
+      <span class="h" property="rdfs:label">w5:workflow.encounter</span>
+      <span property="rdfs:comment">Encounter Workflow Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/workflow">w5:workflow</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/conformance.terminology">
+      <span class="h" property="rdfs:label">w5:conformance.terminology</span>
+      <span property="rdfs:comment">Terminology Conformance Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/conformance">w5:conformance</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/administrative.entity">
+      <span class="h" property="rdfs:label">w5:administrative.entity</span>
+      <span property="rdfs:comment">Entity Administrative Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/administrative">w5:administrative</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/infrastructure.information">
+      <span class="h" property="rdfs:label">w5:infrastructure.information</span>
+      <span property="rdfs:comment">Information Infrastructural Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/infrastructure">w5:infrastructure</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/financial.payment">
+      <span class="h" property="rdfs:label">w5:financial.payment</span>
+      <span property="rdfs:comment">Payment Financial Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/financial">w5:financial</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/conformance.behavior">
+      <span class="h" property="rdfs:label">w5:conformance.behavior</span>
+      <span property="rdfs:comment">Behavior Conformance Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/conformance">w5:conformance</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/infrastructure.structure">
+      <span class="h" property="rdfs:label">w5:infrastructure.structure</span>
+      <span property="rdfs:comment">Structure Infrastructural Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/infrastructure">w5:infrastructure</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/administrative.device">
+      <span class="h" property="rdfs:label">w5:administrative.device</span>
+      <span property="rdfs:comment">Device Administrative Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/administrative">w5:administrative</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/financial.other">
+      <span class="h" property="rdfs:label">w5:financial.other</span>
+      <span property="rdfs:comment">Other Financial Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/financial">w5:financial</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/administrative.group">
+      <span class="h" property="rdfs:label">w5:administrative.group</span>
+      <span property="rdfs:comment">Group Administrative Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/administrative">w5:administrative</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/administrative.individual">
+      <span class="h" property="rdfs:label">w5:administrative.individual</span>
+      <span property="rdfs:comment">Individual Administrative Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/administrative">w5:administrative</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/financial.billing">
+      <span class="h" property="rdfs:label">w5:financial.billing</span>
+      <span property="rdfs:comment">Billing Financial Resources</span>
+      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/financial">w5:financial</a></span>
+      <link property="http://schema.org/isPartOf" href="http://w5.schema.org" />
+    </div>
+    <h2>Properties</h2>
+    <h2>Value Sets</h2>
+  </body>
+</html>
