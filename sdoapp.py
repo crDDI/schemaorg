@@ -69,8 +69,8 @@ ENABLE_HOSTED_EXTENSIONS = True
 EXTENSION_SUFFIX = "" # e.g. "*"
 
 #ENABLED_EXTENSIONS = [ 'admin', 'auto', 'bib', 'health-lifesci'  ]
-ENABLED_EXTENSIONS = ['auto', 'bib', 'health-lifesci', 'pending', 'meta'  ]
-ALL_LAYERS = [ 'core', 'admin', 'auto', 'bib', 'health-lifesci', 'pending', 'meta' ]
+ENABLED_EXTENSIONS = ['fhir', 'w5'  ]
+ALL_LAYERS = ['core', 'admin', 'fhir', 'w5']
 
 
 FORCEDEBUGGING = False
@@ -979,12 +979,12 @@ class ShowUnit (webapp2.RequestHandler):
     def getExtendedSiteName(self, layers):
         """Returns site name (domain name), informed by the list of active layers."""
         if layers==["core"]:
-            return "schema.org"
+            return "fhir.schema.org"
         if len(layers)==0:
-            return "schema.org"
+            return "fhir.schema.org"
         return (getHostExt() + ".schema.org")
 
-    def emitSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="schema.org", layers="core"):
+    def emitSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="fhir.schema.org", layers="w5 fhir"):
         """
         Generates, caches and emits HTML headers for class, property and enumeration pages. Leaves <body> open.
 
@@ -1466,7 +1466,7 @@ class ShowUnit (webapp2.RequestHandler):
                 template = JINJA_ENVIRONMENT.get_template('wrongExt.tpl')
                 page = template.render({ 'target': schema_node.id,
                                         'extensions': extensions,
-                                        'sitename': "schema.org",
+                                        'sitename': "fhir.schema.org",
                                         'staticPath': makeUrl("","")})
 
                 self.response.out.write( page )
