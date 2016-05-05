@@ -26,11 +26,6 @@ The schemas are a set of 'types', each associated with a set of properties. The 
 </ul>
 <br />
 
-Or you can jump directly to a commonly used type:
-<ul>
-  <li><a href="{{staticPath}}/FHIR">FHIR</a></li>
-  <li><a href="{{staticPath}}/FHIR">FHIR W5 (Who, What, Why, Where, When) Ontology</a></li>
-</ul>
 
 <br/>Using the <a href="{{staticPath}}/docs/extension.html">extension mechanism</a> the core vocabulary is extended by the following hosted extensions:
 <ul>
